@@ -1,4 +1,11 @@
-const gameName = new String('Sahil')
+const name = "Sahil"
+const repoCount = 50
+
+//console.log(name +repoCount + " Value");
+
+console.log(`Hello my name is ${name} and my repo Count is ${repoCount}`);
+
+const gameName = new String('Sahil-hc-com')
 
 //console.log(gameName[0]);
 //console.log(gameName.__proto__);
@@ -19,10 +26,10 @@ const newStringOne= "    Sahil    "
 console.log(newStringOne);
 console.log(newStringOne.trim());
 
-const url = "https://www.linkedin.com/in/mdsahil4518/"
+const url = "https://www.linkedin.com/in%20mdsahil4518/"
 
 console.log(url.replace('%20', '-'));
 
-console.log(url.includes('sadaf'));
+console.log(url.includes('Sahil'));
 
-console.log(gameName.split());
+console.log(gameName.split('-'));
