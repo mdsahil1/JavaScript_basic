@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>DOM Learning</title>
+    <title>DOM learning</title>
     <style>
         .bg-black{
             background-color: #212121;
@@ -13,8 +13,48 @@
 </head>
 <body class="bg-black">
     <div >
-       <h1 id="title" class="heading">Dom learning on chai aur code</h1> 
-       <p>Lorem ipsum dolor sit amet.</p>
-       </div>
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
 </body>
+<script>
+//    const ul= document.querySelector('ul')
+//    const turnGreen= ul.querySelector('li')
+//    turnGreen.style.backgroundColor="green"
+//    turnGreen.style.padding="10px"
+//    turnGreen.innerText='five'
+
+    const liList = document.querySelectorAll('li')
+    liList[0].style.backgroundColor='green'
+    liList[0].style.padding='10px'
+    liList[0].style.borderRadius='20px'
+    liList[1].innerText="four"
+
+    liList.forEach(function (l){
+        l.style.color= 'pink'
+    })
+
+    const h1=document.querySelector('h1')
+    h1.style.color='blue'
+
+    const tempClassList = document.getElementsByClassName('list-item')
+    const myConvertedArray = Array.from(tempClassList)
+    myConvertedArray.forEach(function(li){
+        li.style.backgroundColor = 'yellow'
+    })
+
+
+
+</script>
 </html>
